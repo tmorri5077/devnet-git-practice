@@ -1,6 +1,12 @@
-def get_device(device name):
+def get_device_status(device_name):
     return f"Device {device_name} is up and reachable via API."
 
-if__name__== "__main__":
-print("Hello DevNet, practicing Git pulling from GitHub!")
-print(get_device_status("core-switch-01"))
+def get_device_health_score(device_name):
+    # fake health score for practice
+    return 95
+
+if __name__ == "__main__":
+    device = "core-switch-01"
+    print("Hello DevNet, testing branches with Git!")
+    print(get_device_status(device))
+    print(f"Health score for {device}: {get_device_health_score(device)}%")
